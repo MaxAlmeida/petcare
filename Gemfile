@@ -19,7 +19,10 @@ gem 'bootstrap', '~> 4.0.0'
 
 gem "bootstrap_form", "~> 4.0"
 
+gem 'faker'
+
 gem 'will_paginate-bootstrap4'
+
 gem 'mini_racer', platforms: :ruby
 gem 'jquery-rails'
 # Use CoffeeScript for .coffee assets and views
