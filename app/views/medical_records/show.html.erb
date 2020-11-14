@@ -2,18 +2,18 @@
 
 <p>
   <strong>Pet:</strong>
-  <%= @medical_record.pet %>
+  <%= @medical_record.pet.name %>
 </p>
 
 <p>
-  <strong>Symptoms:</strong>
+  <strong>Sintomas:</strong>
   <%= @medical_record.symptoms %>
 </p>
 
 <p>
-  <strong>Treatment:</strong>
+  <strong>Tratamento:</strong>
   <%= @medical_record.treatment %>
 </p>
 
-<%= link_to 'Edit', edit_pet_medical_record_path(@pet, @medical_record) %> |
-<%= link_to 'Back', pet_medical_records_path(@pet) %>
+<%= link_to 'Editar', edit_pet_medical_record_path(@pet, @medical_record), class: 'btn btn-warning' %> |
+<%= link_to 'Voltar', pet_medical_records_path(@pet), class: 'btn btn-primary' %>
