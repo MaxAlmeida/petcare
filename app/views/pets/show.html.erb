@@ -1,25 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nome:</strong>
   <%= @pet.name %>
 </p>
 
 <p>
-  <strong>Date of birth:</strong>
-  <%= @pet.date_of_birth %>
+  <strong>Data de Nascimento:</strong>
+  <%= @pet.date_of_birth&.to_date %>
 </p>
 
 <p>
-  <strong>Breed:</strong>
+  <strong>Raça:</strong>
   <%= @pet.breed %>
 </p>
 
 <p>
-  <strong>Type of Animal:</strong>
+  <strong>Tipo de animal:</strong>
   <%= @pet.type_of_animal %>
 </p>
 
-<%= link_to 'Edit', edit_pet_path(@pet) %> |
-<%= link_to 'Add medical record', pet_medical_records_path(@pet) %> |
-<%= link_to 'Back', pets_path %>
+<%= link_to 'Editar', edit_pet_path(@pet), class: 'btn btn-warning' %> 
+<%= link_to 'Adicionar prontuário', pet_medical_records_path(@pet), class: 'btn btn-success' %>
+<%= link_to 'Voltar', pets_path, class: 'btn btn-primary' %>

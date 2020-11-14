@@ -1,6 +1,7 @@
-<h1>Editing Pet</h1>
+<div class="container text-center">
+  <h1>Alterar informações do Pet</h1>
 
-<%= render 'form', pet: @pet %>
+  <%= render 'form', pet: @pet %>
 
-<%= link_to 'Show', @pet %> |
-<%= link_to 'Back', pets_path %>
+  <%= link_to 'Voltar', pets_path, class: "btn btn-info" %>
+<div>

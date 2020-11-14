@@ -4,7 +4,7 @@ class PetsController < ApplicationController
   # GET /pets
   # GET /pets.json
   def index
-    @pets = Pet.all
+    @pets = Pet.paginate(page: params[:page], per_page: 2)
   end
 
   # GET /pets/1
@@ -24,7 +24,7 @@ class PetsController < ApplicationController
   # POST /pets
   # POST /pets.json
   def create
-
+    byebug
     @pet = Pet.new(pet_params)
 
     respond_to do |format|
@@ -70,6 +70,6 @@ class PetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pet_params
-      params.require(:pet).permit(:name, :date_of_birth, :breed, :type)
+      params.require(:pet).permit(:name, :date_of_birth, :breed, :type_of_animal)
     end
 end

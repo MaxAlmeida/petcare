@@ -1,4 +1,4 @@
-<%= form_with(model: [@pet, medical_record], local: true) do |form| %>
+<%= bootstrap_form_with(model: [@pet, medical_record], local: true) do |form| %>
   <% if medical_record.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(medical_record.errors.count, "error") %> prohibited this medical_record from being saved:</h2>
@@ -11,17 +11,10 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :symptoms %>
-    <%= form.text_area :symptoms %>
-  </div>
-
-  <div class="field">
-    <%= form.label :treatment %>
-    <%= form.text_area :treatment %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <%= form.text_area :symptoms, label: 'Sintomas' %>
+  <%= form.text_area :treatment, label: 'Tratamento' %>
+ 
+  <%= form.form_group do %>
+    <%= form.submit "Submeter", class: 'btn btn-success' %>
+  <% end %>
 <% end %>
