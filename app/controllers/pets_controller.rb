@@ -4,7 +4,7 @@ class PetsController < ApplicationController
   # GET /pets
   # GET /pets.json
   def index
-    @pets = Pet.paginate(page: params[:page], per_page: 2)
+    @pets = Pet.paginate(page: params[:page], per_page: 8)
   end
 
   # GET /pets/1
@@ -24,7 +24,6 @@ class PetsController < ApplicationController
   # POST /pets
   # POST /pets.json
   def create
-    byebug
     @pet = Pet.new(pet_params)
 
     respond_to do |format|
