@@ -1,0 +1,22 @@
+Funcionalidades desenvolvidas:
+- Listagem de Pets
+- Criação de Pets
+- Edição de Pets
+- Remoção de Pets
+
+- Listagem de prontuários por Pet
+- Criação de prontuários por Pet
+- Edição de prontuários por Pet
+- Remoção de prontuários
+
+Problemas/Melhorias
+- Melhoria:
+  Criação de uma classe chamada Animal ao qual o Pet pudesse pertencer , ao invés de usar um
+  campo enum type_of_animal
+
+- Melhoria
+  Criação de testes de interface/view
+
+- Problema
+  As "Flash mensagens" ficaram travadas após a integração com o bootstrap.
+  
