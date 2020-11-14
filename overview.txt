@@ -15,7 +15,7 @@ Problemas/Melhorias
   campo enum type_of_animal
 
 - Melhoria
-  Criação de testes de interface/view
+  Criação de testes de interface/view ( Observação: foram feitos testes de model e de request)
 
 - Problema
   As "Flash mensagens" ficaram travadas após a integração com o bootstrap.
