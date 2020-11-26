@@ -13,5 +13,6 @@
 - Create Tables - `rails db:migrate`
 - Populate database with pets - `rake db:seed `
 - Run Tests - `bundle exec rspec`
+- Run rake to generate csv  - `rake pet:export_csv['dipirona','2020-11-26']`
 #### 4 - Start Server
 - Start up local server - `rails s`
